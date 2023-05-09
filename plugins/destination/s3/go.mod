@@ -20,7 +20,11 @@ require (
 // TODO: remove once all updates are merged
 replace github.com/apache/arrow/go/v13 => github.com/cloudquery/arrow/go/v13 v13.0.0-20230509053643-898a79b1d3c8
 
-replace github.com/cloudquery/filetypes/v3 => ../../../../filetypes
+replace github.com/cloudquery/plugin-sdk/v3 => github.com/disq/plugin-sdk/v3 v3.0.0-20230511141134-6266eb004e88
+
+//replace github.com/cloudquery/plugin-sdk/v3 => ../../../../plugin-sdk
+
+replace github.com/cloudquery/filetypes/v3 => github.com/cloudquery/filetypes/v3 v3.0.1-0.20230512085542-08aa6cbace18
 
 require (
 	github.com/JohnCGriffin/overflow v0.0.0-20211019200055-46fa312c352c // indirect
