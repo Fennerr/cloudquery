@@ -100,8 +100,8 @@ github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ3
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
-github.com/disq/plugin-sdk/v3 v3.0.0-20230511141134-6266eb004e88 h1:GLqKDbIAi/2AYMt4q+1RttrI0/d0cfCQzvdPzha/MaI=
-github.com/disq/plugin-sdk/v3 v3.0.0-20230511141134-6266eb004e88/go.mod h1:thsRGDHMyWAn1mIUV74VXzVdhfQvlnJIIoxLPNKRO10=
+github.com/disq/plugin-sdk/v3 v3.0.0-20230516084645-04e89d36cc91 h1:Jafd97NHFRQ5yzoNDwG7mudnoP8vIDv8zoQ1VgvSuZs=
+github.com/disq/plugin-sdk/v3 v3.0.0-20230516084645-04e89d36cc91/go.mod h1:cJP020H448wknQfjCDo0HR0b3vt9kYcjrEWtmV3YIgc=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.1-0.20191026205805-5f8ba28d4473/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1mIlRU8Am5FuJP05cCM98=

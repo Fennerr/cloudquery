@@ -16,7 +16,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/cloudquery/filetypes/v3"
 	"github.com/cloudquery/plugin-pb-go/specs"
-	"github.com/cloudquery/plugin-sdk/v3/plugins/destination"
+	"github.com/cloudquery/plugin-sdk/v3/plugins/destination/batchingwriter"
 	"github.com/cloudquery/plugin-sdk/v3/schema"
 	"github.com/cloudquery/plugin-sdk/v3/types"
 	"github.com/google/uuid"
@@ -35,15 +35,15 @@ const (
 
 var reInvalidJSONKey = regexp.MustCompile(`\W`)
 
-var _ destination.OpenCloseWriter = (*Client)(nil)
+var _ batchingwriter.OpenCloseWriter = (*Client)(nil)
 
-func (c *Client) OpenTable(ctx context.Context, sourceSpec specs.Source, table *schema.Table) error {
+func (c *Client) OpenTable(ctx context.Context, sourceSpec specs.Source, table *schema.Table, syncTime time.Time) error {
 	c.logger.Debug().Str("source", sourceSpec.Name).Str("table", table.Name).Msg("OpenTable")
 
 	c.tableWorkersMu.Lock()
 	defer c.tableWorkersMu.Unlock()
 
-	objKey := replacePathVariables(c.pluginSpec.Path, table.Name, uuid.NewString(), c.pluginSpec.Format, time.Now().UTC())
+	objKey := replacePathVariables(c.pluginSpec.Path, table.Name, uuid.NewString(), c.pluginSpec.Format, syncTime)
 
 	pr, pw := io.Pipe()
 	doneCh := make(chan error)
@@ -75,7 +75,7 @@ func (c *Client) OpenTable(ctx context.Context, sourceSpec specs.Source, table *
 	return nil
 }
 
-func (c *Client) CloseTable(ctx context.Context, sourceSpec specs.Source, table *schema.Table) error {
+func (c *Client) CloseTable(_ context.Context, sourceSpec specs.Source, table *schema.Table, _ time.Time) error {
 	c.logger.Debug().Str("source", sourceSpec.Name).Str("table", table.Name).Msg("CloseTable")
 
 	c.tableWorkersMu.Lock()
@@ -95,7 +95,7 @@ func (c *Client) CloseTable(ctx context.Context, sourceSpec specs.Source, table 
 	return err
 }
 
-func (c *Client) WriteTableBatch(ctx context.Context, sourceSpec specs.Source, table *schema.Table, data []arrow.Record) error {
+func (c *Client) WriteTableBatch(_ context.Context, sourceSpec specs.Source, table *schema.Table, _ time.Time, data []arrow.Record) error {
 	if len(data) == 0 {
 		return nil
 	}
