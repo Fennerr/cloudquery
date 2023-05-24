@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [17.4.1](https://github.com/cloudquery/cloudquery/compare/plugins-source-aws-v17.4.0...plugins-source-aws-v17.4.1) (2023-05-24)
+
+
+### Bug Fixes
+
+* **aws:** Support syncing AWS SSO Account Assignments for non management accounts ([#10881](https://github.com/cloudquery/cloudquery/issues/10881)) ([a715e4f](https://github.com/cloudquery/cloudquery/commit/a715e4f24f973d8382f9d901723baf6ee6116d18))
+
 ## [17.4.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-aws-v17.3.1...plugins-source-aws-v17.4.0) (2023-05-23)
 
 
