@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-okta-v2.4.0...plugins-source-okta-v2.5.0) (2023-05-24)
+
+
+### Features
+
+* **okta:** Deprecation notice for `OKTA_API_TOKEN` env variable support ([#10887](https://github.com/cloudquery/cloudquery/issues/10887)) ([528daaa](https://github.com/cloudquery/cloudquery/commit/528daaacd35453894c5da3e5cd8fb0078c31c5c9))
+
 ## [2.4.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-okta-v2.3.1...plugins-source-okta-v2.4.0) (2023-05-22)
 
 
