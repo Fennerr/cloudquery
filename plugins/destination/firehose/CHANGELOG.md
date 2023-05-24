@@ -1,5 +1,19 @@
 # Changelog
 
+## [2.1.0](https://github.com/cloudquery/cloudquery/compare/plugins-destination-firehose-v2.0.2...plugins-destination-firehose-v2.1.0) (2023-05-24)
+
+
+### Features
+
+* **deps:** Upgrade to Apache Arrow v13 (latest `cqmain`) ([#10605](https://github.com/cloudquery/cloudquery/issues/10605)) ([a55da3d](https://github.com/cloudquery/cloudquery/commit/a55da3dbefafdc68a6bda2d5f1d334d12dd97b97))
+* **firehose:** Update to `github.com/cloudquery/plugin-sdk/v3` ([#10895](https://github.com/cloudquery/cloudquery/issues/10895)) ([99449c4](https://github.com/cloudquery/cloudquery/commit/99449c40907b2283bb395b92c8bf9e97f53e8933)), closes [#10718](https://github.com/cloudquery/cloudquery/issues/10718)
+
+
+### Bug Fixes
+
+* **deps:** Update module github.com/aws/aws-sdk-go-v2/config to v1.18.25 ([#10786](https://github.com/cloudquery/cloudquery/issues/10786)) ([caca1a4](https://github.com/cloudquery/cloudquery/commit/caca1a41e298c06afb6f474b8fd911c4544a2eec))
+* **deps:** Update module github.com/cloudquery/plugin-pb-go to v1.0.8 ([#10798](https://github.com/cloudquery/cloudquery/issues/10798)) ([27ff430](https://github.com/cloudquery/cloudquery/commit/27ff430527932d59a4d488a6767547eda8853940))
+
 ## [2.0.2](https://github.com/cloudquery/cloudquery/compare/plugins-destination-firehose-v2.0.1...plugins-destination-firehose-v2.0.2) (2023-05-09)
 
 
