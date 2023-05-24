@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [17.4.1](https://github.com/cloudquery/cloudquery/compare/plugins-source-aws-v17.4.0...plugins-source-aws-v17.4.1) (2023-05-24)
 
 
+### This Release has the Following Changes to Tables
+- Table `aws_ssoadmin_permission_sets`: column added with name `request_account_id` and type `String`
+- Table `aws_ssoadmin_permission_sets`: column added with name `request_region` and type `String`
+
 ### Bug Fixes
 
 * **aws:** Support syncing AWS SSO Account Assignments for non management accounts ([#10881](https://github.com/cloudquery/cloudquery/issues/10881)) ([a715e4f](https://github.com/cloudquery/cloudquery/commit/a715e4f24f973d8382f9d901723baf6ee6116d18))
