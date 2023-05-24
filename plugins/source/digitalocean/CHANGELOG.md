@@ -5,6 +5,20 @@ All notable changes to this provider will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [4.5.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-digitalocean-v4.4.0...plugins-source-digitalocean-v4.5.0) (2023-05-24)
+
+
+### Features
+
+* **deps:** Upgrade to Apache Arrow v13 (latest `cqmain`) ([#10605](https://github.com/cloudquery/cloudquery/issues/10605)) ([a55da3d](https://github.com/cloudquery/cloudquery/commit/a55da3dbefafdc68a6bda2d5f1d334d12dd97b97))
+* **do:** Add SYD1 to default regions of Spaces ([#10830](https://github.com/cloudquery/cloudquery/issues/10830)) ([e18131a](https://github.com/cloudquery/cloudquery/commit/e18131ab90a601a1d6296042d8ae6535bf1dd6b8))
+
+
+### Bug Fixes
+
+* **deps:** Update module github.com/aws/aws-sdk-go-v2/config to v1.18.25 ([#10786](https://github.com/cloudquery/cloudquery/issues/10786)) ([caca1a4](https://github.com/cloudquery/cloudquery/commit/caca1a41e298c06afb6f474b8fd911c4544a2eec))
+* **deps:** Update module github.com/cloudquery/plugin-pb-go to v1.0.8 ([#10798](https://github.com/cloudquery/cloudquery/issues/10798)) ([27ff430](https://github.com/cloudquery/cloudquery/commit/27ff430527932d59a4d488a6767547eda8853940))
+
 ## [4.4.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-digitalocean-v4.3.1...plugins-source-digitalocean-v4.4.0) (2023-05-08)
 
 
