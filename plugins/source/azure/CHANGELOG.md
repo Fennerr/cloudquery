@@ -5,6 +5,13 @@ All notable changes to this provider will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [7.6.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-azure-v7.5.0...plugins-source-azure-v7.6.0) (2023-05-24)
+
+
+### Features
+
+* **azure:** Support Skip Subscriptions  ([#10884](https://github.com/cloudquery/cloudquery/issues/10884)) ([b59fc69](https://github.com/cloudquery/cloudquery/commit/b59fc69280a44a614d48aea6fc82f166addddb3f)), closes [#10829](https://github.com/cloudquery/cloudquery/issues/10829)
+
 ## [7.5.0](https://github.com/cloudquery/cloudquery/compare/plugins-source-azure-v7.4.1...plugins-source-azure-v7.5.0) (2023-05-16)
 
 
